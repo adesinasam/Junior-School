@@ -243,8 +243,6 @@ A new feature has been added to the `Student Report Generation Tool` to support 
     -   When checked, the system prints a report card using a **custom template**, designed to align with the institution's branding and reporting preferences.
         
     -   This template reflects the **layout and styling** shown in the sample below:
-        
-    ![Screenshot 2025-04-15 at 17 24 06](https://github.com/user-attachments/assets/4ba16785-accd-453b-8369-0f4f5a007a52)
    
         
 -   **Group Filter Removed**:  
