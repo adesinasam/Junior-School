@@ -257,3 +257,15 @@ def close_assessment_plan():
 def get_education_settings():
     settings = frappe.get_single("Education Settings")
     return settings
+
+
+@frappe.whitelist()
+def get_subtopics(topic):
+    return frappe.db.get_all(
+        "Course Topic", filters={"parent": topic}, fields=["name", "topic_name"]
+    )
+
+
+@frappe.whitelist()
+def get_student_guardian(student):
+    return frappe.db.get_value("Student Guardian", {"parent": student}, "guardian")
